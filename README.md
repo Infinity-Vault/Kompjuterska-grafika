@@ -8,6 +8,8 @@
 
 ~ DOWNLOAD [Unity Hub (latest version for Windows)](https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.exe)
 
+[Lista Event funkcija Unity engine-a sa njihovim objasnjenjima](https://docs.unity3d.com/Manual/EventFunctions.html)
+
 **Materijali**
 
 <hr>
