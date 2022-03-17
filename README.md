@@ -26,6 +26,7 @@
 
 <hr>
 
+[Vjezbe 1 (17.03.2022.) Mohamed El-Zayat](https://github.com/Infinity-Vault/Kompjuterska-grafika/tree/main/Vjezbe/Vjezbe_1)
 
 <hr>
 
