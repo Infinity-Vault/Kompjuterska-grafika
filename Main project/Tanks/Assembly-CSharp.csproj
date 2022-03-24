@@ -624,20 +624,29 @@
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+ <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+ <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
  <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
- </Reference>
  <Reference Include="Unity.Timeline">
  <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Searcher.Editor">
+ <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.Runtime">
+ <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
@@ -648,50 +657,41 @@
  <Reference Include="Unity.Rider.Editor">
  <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+ <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Universal.Shaders">
- <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
  </Reference>
  <Reference Include="FIT.EditorAddons">
  <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/FIT.EditorAddons.dll</HintPath>
  </Reference>
- <Reference Include="Unity.RenderPipelines.Core.Runtime">
- <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Searcher.Editor">
- <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Universal.Editor">
- <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Mathematics.Editor">
- <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
- <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Core.Editor">
- <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
- <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
- </Reference>
  <Reference Include="Unity.Mathematics">
  <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
- <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
- </Reference>
- <Reference Include="FIT.EditorAddons.Extensions">
- <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/FIT.EditorAddons.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ShaderGraph.Editor">
  <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Unity.RenderPipelines.Universal.Runtime">
- <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+ <Reference Include="FIT.EditorAddons.Extensions">
+ <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/FIT.EditorAddons.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Universal.Editor">
+ <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+ <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+ <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Timeline.Editor">
+ <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Mathematics.Editor">
+ <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.Editor">
+ <HintPath>C:/Users/haris/Documents/GitHub/Kompjuterska-grafika/Main project/Tanks/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
