@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\Behaviours\Managment\InputManager.cs" />
      <Compile Include="Assets\Scripts\Behaviours\Managment\PlayerControler.cs" />
      <Compile Include="Assets\Scripts\Generators\LevelGenerator.cs" />
+     <Compile Include="Assets\Scripts\Behaviours\Controlers\CameraController.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity 2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

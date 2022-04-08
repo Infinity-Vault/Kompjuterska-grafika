@@ -1,7 +1,4 @@
-using System.Numerics;
-using Unity.Mathematics;
 using UnityEngine;
-using UnityEngine.Rendering;
 using Quaternion = UnityEngine.Quaternion;
 using Vector3 = UnityEngine.Vector3;
 
@@ -14,6 +11,9 @@ namespace Tanks.Behaviours.Managment
         [field: SerializeField] 
         private float Speed { get; set; }  //Isti razlog;    
         //Kreiramo prop brzine jer cemo je koristiti regularno;
+        
+        [field: SerializeField]
+        private GameObject Projectile { get; set; }//Projektil koji ce tenk koristiti za pucanje;
         
         //RigidBody klasu i objekte koristimo kada god zelimo neku silu da izvrsavamo
         //nad nekim GameObject;
@@ -30,9 +30,15 @@ namespace Tanks.Behaviours.Managment
             //Kod RigidBody u Unity-u moramo staviti Y osu na fixed radi gravitacije (kako ne bi propadao u beskraj);
         }
 
-        private void OnFirePressed(bool obj)
+        private void OnFirePressed()
         {
-            //Logika pucanja;
+            //Logika pucanja:
+           var projectileToShoot= Instantiate(Projectile,this.transform.position+
+                                                         this.transform.forward+new Vector3(0,0.70f,0.10f), Quaternion.identity);//Dodatni novi vektor radi specificnije pozicije kugle;
+           //Instanciraj projektil uvijek ISPRED player controllera (zavisi prema gdje je usmjeren tenk);
+           //Nakon toga, nadji RB od Projectile objekta, te vektor brzine kretanja  mu pomjeri za 10 metara unaprijed;
+           projectileToShoot.GetComponent<Rigidbody>().velocity = this.transform.forward * 10f; 
+
         }
 
         //Metoda koja ce se dodati u niz event-a OnInput;
