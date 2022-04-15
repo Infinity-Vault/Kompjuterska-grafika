@@ -14,6 +14,10 @@
 
 <hr>
 
+[Predvanja 2021/22](https://edufit-my.sharepoint.com/:f:/r/personal/rijad_azemi_edu_fit_ba/Documents/Fakultet%20Informacijskih%20Tehnologija/FIT%20-%20II%20Godina%20Snimci/Semestar%20IV/Predavanja/KGR%20Predavanja?csf=1&web=1&e=PTYpsJ)
+
+[Vjezbe 2021/22](https://edufit-my.sharepoint.com/:f:/r/personal/rijad_azemi_edu_fit_ba/Documents/Fakultet%20Informacijskih%20Tehnologija/FIT%20-%20II%20Godina%20Snimci/Semestar%20IV/Vjezbe/KGR%20Vjezbe?csf=1&web=1&e=XVyrHv)
+
 <hr>
 
 **Predavanja**
