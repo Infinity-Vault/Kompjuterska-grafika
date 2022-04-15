@@ -34,7 +34,7 @@ namespace Tanks.Behaviours.Managment
         {
             //Logika pucanja:
            var projectileToShoot= Instantiate(Projectile,this.transform.position+
-                                                         this.transform.forward+new Vector3(0,0.70f,0.10f), Quaternion.identity);//Dodatni novi vektor radi specificnije pozicije kugle;
+                                                         this.transform.forward +new Vector3(0,0.30f,0), Quaternion.identity);//Dodamo novi vektor kako bi malo projektil podigli po Y osi;
            //Instanciraj projektil uvijek ISPRED player controllera (zavisi prema gdje je usmjeren tenk);
            //Nakon toga, nadji RB od Projectile objekta, te vektor brzine kretanja  mu pomjeri za 10 metara unaprijed;
            projectileToShoot.GetComponent<Rigidbody>().velocity = this.transform.forward * 10f; 

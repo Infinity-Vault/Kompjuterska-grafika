@@ -71,14 +71,26 @@ namespace Tanks.Generators
             {
                 for (int j = 0; j < Dimensions.y; j++)
                 {
-                    var xCoordinate= (i*0.5f) / Dimensions.x*20;
-                    var yCoordinate = (j*0.5f) / Dimensions.y*20;
+                    //var xCoordinate= (i*0.5f) / Dimensions.x*20;
+                    //var yCoordinate = (j*0.5f) / Dimensions.y*20;
+                    //
+                    ////Slicna logika random generisanja kao i gore:
+                    //if(Mathf.PerlinNoise(xCoordinate, yCoordinate)>0.7f)
+                    //    Instantiate(ObsticleOne, new Vector3(i,0,j), Quaternion.identity);
+                    //else if(Mathf.PerlinNoise(xCoordinate, yCoordinate)<0.4f)
+                    //    Instantiate(ObsticleTwo, new Vector3(i,0,j), Quaternion.identity);
                     
-                    //Slicna logika random generisanja kao i gore:
-                    if(Mathf.PerlinNoise(xCoordinate, yCoordinate)>0.7f)
-                        Instantiate(ObsticleOne, new Vector3(i,0,j), Quaternion.identity);
-                    else if(Mathf.PerlinNoise(xCoordinate, yCoordinate)<0.4f)
-                        Instantiate(ObsticleTwo, new Vector3(i,0,j), Quaternion.identity);
+                    //Muhamedov nacin generisanja levela:
+                    float xCoordinate = 0.5f * i / Dimensions.x * 10;//Kreiramo float brojeve za PerlinNoise
+                    float yCoordinate = 0.5f * j / Dimensions.x * 10;
+                    var positionOfBlock = Mathf.PerlinNoise(xCoordinate, yCoordinate);//Perlin nam vrati broj izmedju 0/1;
+            
+                    if (positionOfBlock > 0.55f)
+                        Instantiate(ObsticleOne, new Vector3(i, 0, j), 
+                            quaternion.identity);
+                    else if(positionOfBlock<=0.3f)
+                        Instantiate(ObsticleTwo, new Vector3(i, 0, j), 
+                            quaternion.identity);
                 }
             }
         }
