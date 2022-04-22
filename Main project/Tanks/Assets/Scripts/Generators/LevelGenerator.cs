@@ -1,8 +1,5 @@
-using System;
-using TreeEditor;
 using Unity.Mathematics;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 namespace Tanks.Generators
 {
@@ -81,15 +78,15 @@ namespace Tanks.Generators
                     //    Instantiate(ObsticleTwo, new Vector3(i,0,j), Quaternion.identity);
                     
                     //Muhamedov nacin generisanja levela:
-                    float xCoordinate = 0.5f * i / Dimensions.x * 10;//Kreiramo float brojeve za PerlinNoise
-                    float yCoordinate = 0.5f * j / Dimensions.x * 10;
+                    var xCoordinate = 0.6f * i / Dimensions.x * 10;//Kreiramo float brojeve za PerlinNoise
+                    var yCoordinate = 0.3f * j / Dimensions.y * 10;
                     var positionOfBlock = Mathf.PerlinNoise(xCoordinate, yCoordinate);//Perlin nam vrati broj izmedju 0/1;
             
                     if (positionOfBlock > 0.55f)
-                        Instantiate(ObsticleOne, new Vector3(i, 0, j), 
-                            quaternion.identity);
+                        Instantiate(ObsticleOne, new Vector3(i-(Dimensions.x/2), 0, j-(Dimensions.y/2)), 
+                            quaternion.identity);//Dijelimo dimenzijom samo radi ljepse raspodjele kocki;
                     else if(positionOfBlock<=0.3f)
-                        Instantiate(ObsticleTwo, new Vector3(i, 0, j), 
+                        Instantiate(ObsticleTwo, new Vector3(i-(Dimensions.x/2), 0, j-(Dimensions.y/2)), 
                             quaternion.identity);
                 }
             }

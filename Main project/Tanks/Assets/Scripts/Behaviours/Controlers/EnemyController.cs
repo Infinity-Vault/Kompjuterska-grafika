@@ -9,8 +9,8 @@ namespace Tanks.Behaviours.Controlers
     {
         private Rigidbody EnemyTankRigidBody { get; set; }//RB od enemy tenka kako bi ga mogli kretati;
         
-        [field: SerializeField]
-        private float Speed { get; set; }//Brzina kretanja potrebna za Move metodu dole;
+        public float Speed { get; set; }//Brzina kretanja potrebna za Move metodu dole;
+        //Public jer zelimo da iz TankData scriptable objekta mozemo preuzeti brzinu tenka;
 
         //Posto nam se tenk krece po x i y koordinatama, zgodno je da koristimo Vector2 tip podatka;
         private List<Vector2> DirectionsSet { get; set; }//Lista mogucih direkcija za tenk;

@@ -57,6 +57,8 @@
      <Compile Include="Assets\Scripts\Behaviours\Managment\PlayerControler.cs" />
      <Compile Include="Assets\Scripts\Generators\LevelGenerator.cs" />
      <Compile Include="Assets\Scripts\Behaviours\ProjectileBehaviour.cs" />
+     <Compile Include="Assets\Scripts\ScriptableObjects\TankData.cs" />
+     <Compile Include="Assets\Scripts\Generators\EnemyGenerator.cs" />
      <Compile Include="Assets\Scripts\Behaviours\Controlers\EnemyController.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity 2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
