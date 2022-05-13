@@ -239,9 +239,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2ca2bd752fb8dc43961426f7aaf8fd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <ObsticleOne>k__BackingField: {fileID: 6506671810036388381, guid: e518fb03d210c6d429e29c7d631fe016, type: 3}
-  <ObsticleTwo>k__BackingField: {fileID: 8094890670341299244, guid: eba4ade8ac299e64481d7d7f7da6be80, type: 3}
-  <Dimensions>k__BackingField: {x: 40, y: 40}
+  <Obsticle>k__BackingField: {fileID: 6506671810036388381, guid: e518fb03d210c6d429e29c7d631fe016, type: 3}
+  <WalkableBlock>k__BackingField: {fileID: 8094890670341299244, guid: eba4ade8ac299e64481d7d7f7da6be80, type: 3}
+  <Dimensions>k__BackingField: {x: 50, y: 50}
 --- !u!4 &444328048
 Transform:
   m_ObjectHideFlags: 0
