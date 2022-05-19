@@ -18,6 +18,8 @@
 
 [Vjezbe 2021/22](https://edufit-my.sharepoint.com/:f:/r/personal/rijad_azemi_edu_fit_ba/Documents/Fakultet%20Informacijskih%20Tehnologija/FIT%20-%20II%20Godina%20Snimci/Semestar%20IV/Vjezbe/KGR%20Vjezbe?csf=1&web=1&e=XVyrHv)
 
+[Knjiga KGR](https://github.com/Infinity-Vault/Kompjuterska-grafika/raw/main/Materijali/KGR_K_Kompjuterska%20%20grafika%20-%20predavanja.pdf)
+
 <hr>
 
 **Predavanja**
