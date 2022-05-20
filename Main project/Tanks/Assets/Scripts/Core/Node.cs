@@ -5,7 +5,7 @@ namespace Tanks.Core
 {
     public class Node //Normal C# class, nema nasljedjivanja MonoBehaviour
     {
-        public Vector3 NodeNodePosition { get; set; }//Pozicija cvora;
+        public Vector3 NodePosition { get; set; }//Pozicija cvora;
         
         public Node Parent { get; set; }//Roditelj svakog cvora;
         public List<Node> Adjacency { get; set; }//Lista susjeda;
@@ -17,7 +17,7 @@ namespace Tanks.Core
         {
             IsVisited = false;//Pri samom kreiranju svaki cvor je ne posjecen;
             IsWalkable = isWalkable;
-            NodeNodePosition = nodePosition;
+            NodePosition = nodePosition;
             Adjacency= new List<Node>();//Inicijaliziranje memorije;
         }
     }

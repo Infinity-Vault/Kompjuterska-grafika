@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using Tanks.Behaviours.Controlers;
 using Tanks.Core;
 using Tanks.Core.Algorithms;
 using Unity.Mathematics;
@@ -12,6 +14,9 @@ namespace Tanks.Generators
 
         [field: SerializeField]
         private Vector2Int Dimensions { get; set; } //Kako bi mogli iz Unity generisati dimenzije
+        
+        [field: SerializeField]
+        private AIEnemyControler AIEnemyControler { get; set; }//Napravimo prop za kontroler
         private Node [,] MapGraph { get; set; }//Graf koji ce se sastojati od cvorova koji su walkable;
         //[,] je skraceni oblik deklarisanja i indeksiranja 2D niza;
         
@@ -25,8 +30,15 @@ namespace Tanks.Generators
            var Path = BFS.GetPathToTarget(new Vector2Int(49,38),new Vector2Int(32,9));
            //Odaberemo putanju koju zelimo (od koje do koje kocke);
 
+           var AiEnemyControllerWayPoints = new List<Vector3>();//Napravimo novu listu koju cemo proslijediti nasem AIEnemyControleru;
+
            foreach (var node in Path)
+           {
+               AiEnemyControllerWayPoints.Add(node.NodePosition);//Punimo listu pozicijama kojim se treba kretati neprijatelj;
                node.Block.GetComponent<Renderer>().material.color = Color.blue;//Svaku kocku u putanji obojimo u plavo;
+           }
+            AIEnemyControler.SetWayPoints(AiEnemyControllerWayPoints);
+            //Settujemo nasu listu zeljenih pozicija za neprijatelja;
         }
 
         private void GenerateLevel()
