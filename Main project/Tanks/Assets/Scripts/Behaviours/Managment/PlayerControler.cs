@@ -1,10 +1,12 @@
+using Tanks.Behaviours.Core;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Quaternion = UnityEngine.Quaternion;
 using Vector3 = UnityEngine.Vector3;
 
 namespace Tanks.Behaviours.Managment
 {
-    public class PlayerControler : MonoBehaviour
+    public class PlayerControler : Entity
     {
         [field: SerializeField]//Pomocu ovoga imamo privatno polje koje je accessable samo unity developerima ravno iz Engine-a;
         private InputManager InputManager { get; set; }//Moramo kreirati neki GameObject koji ce se referirati na ovaj InputManager kako bi kontrole radile;
@@ -23,6 +25,9 @@ namespace Tanks.Behaviours.Managment
 
         private void Start()//Event funkcija koja se okine na samom pocetku;
         {
+            this.IsRunning = true;//Postavimo da je objekat ziv u samom startu;
+            this.Health = 100;//Postavimo zdravlje na 100 u samom startu;
+            
             InputManager.OnInput += OnInputRecieved;//Dodana metoda u niz za kretanje;
             InputManager.OnFire += OnFirePressed;//Dodana metoda u niz za pucanje;
 
@@ -32,11 +37,14 @@ namespace Tanks.Behaviours.Managment
 
         private void OnFirePressed()
         {
+            if (!IsRunning)//Ako je mrtav tenk ne moze pucat;
+                return;
             //Logika pucanja:
            var projectileToShoot= Instantiate(Projectile,this.transform.position+
                                                          this.transform.forward +new Vector3(0,0.30f,0), Quaternion.identity);//Dodamo novi vektor kako bi malo projektil podigli po Y osi;
            //Instanciraj projektil uvijek ISPRED player controllera (zavisi prema gdje je usmjeren tenk);
            //Nakon toga, nadji RB od Projectile objekta, te vektor brzine kretanja  mu pomjeri za 10 metara unaprijed;
+           projectileToShoot.gameObject.name = "Projectile";//Radi collision-a sa oruzjem;
            projectileToShoot.GetComponent<Rigidbody>().velocity = this.transform.forward * 10f; 
 
         }
@@ -44,6 +52,8 @@ namespace Tanks.Behaviours.Managment
         //Metoda koja ce se dodati u niz event-a OnInput;
         private void OnInputRecieved(float horizontal, float vertical)
         {
+            if (!IsRunning)//Ako je mrtav tenk ne moze se kretat;
+                return;
             var vector = new Vector3(0,0,0);//Kreiramo defaultni trodimenzionalni vektor;
             if (horizontal != 0)//Moguce vrijednosti su od 1 do -1, ako nije nula korisnik je kliknuo A ili D ili desno ili lijevo strelice (po x osi);
             {
@@ -75,6 +85,15 @@ namespace Tanks.Behaviours.Managment
             {
                 Debug.Log("User didn't press any key!");
             }
+        }
+
+        //Metoda pozvana onda kada Health bude 0 ili negativno:
+        public override void HandleDestruction()
+        {
+            this.IsRunning = !IsRunning;//Postavimo da igrac vise nije aktivan;
+            Destroy(this.transform.GetChild(0).gameObject);//Unistimo ne playera vec sami tenk;
+            //Indeks za dijete je 0 jer imamo samo jednu Parent child relaciju;
+            SceneManager.LoadScene(0);//Imamo samo jednu scenu (inicijalnu);Ovime resetujemo sve jer ponovno scenu instanciramo;
         }
     }
 }
