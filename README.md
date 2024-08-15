@@ -20,6 +20,8 @@
 
 [Knjiga KGR](https://github.com/Infinity-Vault/Kompjuterska-grafika/raw/main/Materijali/KGR_K_Kompjuterska%20%20grafika%20-%20predavanja.pdf)
 
+[Pitanja i odgovori za teoriju](https://github.com/Infinity-Vault/Kompjuterska-grafika/blob/main/Materijali/kgr_teorija_147_pitanja.docx)
+
 <hr>
 
 **Predavanja**
